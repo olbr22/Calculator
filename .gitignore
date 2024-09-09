@@ -1,0 +1,48 @@
+# Gradle files
+.gradle/
+build/
+*/build/
+
+# Local configuration files (specific to Android Studio)
+local.properties
+.idea/workspace.xml
+.idea/libraries/
+.idea/caches/
+.idea/modules.xml
+.idea/codeStyles/
+.idea/assetWizardSettings.xml
+.idea/misc.xml
+
+# Signing keys and files (security-related)
+**/key.properties
+**/*.keystore
+
+# Android Studio specific files
+captures/
+.externalNativeBuild/
+
+# Miscellaneous files
+*.log
+*.apk
+*.lock
+*.iml
+*.hprof
+
+# Operating system specific files (Windows)
+.DS_Store
+Thumbs.db
+
+# Exclude generated files from lint, build or intermediate results
+/app/build/
+*/intermediates/
+*/generated/
+
+############
+#Explanation:
+
+    #build/ and */build/: Ignores build directories where compiled files are stored.
+    #.idea/ and related files: Ignores Android Studio's project-specific settings and configurations.
+    #local.properties: Contains local environment settings, such as the SDK location, which may differ from machine to machine.
+    #Keystore and signing files: These are used to sign your app for publishing. They are sensitive files that should not be publicly shared.
+    #Log, APK, and lock files: Temporary files that don't need to be version-controlled.
+    #Operating system files: Ensures OS-specific files, like Windows Thumbs.db, are not included.
